@@ -5,6 +5,7 @@
         Bread,
         Milk,
         Tomato,
-        Peanuts
+        Peanuts,
+        Ananas
     }
 }

@@ -5,10 +5,9 @@ namespace BazingaCash.Providers
 {
     public class Factory : IFactory
     {
-        private static readonly IFactory Get = new Factory();
         private readonly IUnityContainer _container = new UnityContainer();
 
-        private Factory()
+        public Factory()
         {
             SetUpDefaults();
             ApplyConfigurationOverrides();
@@ -19,7 +18,8 @@ namespace BazingaCash.Providers
         private void SetUpDefaults()
         {
             _container.RegisterType<ICashRegister, CashRegister>(Singleton);
-            _container.RegisterType<IDataProvider, DataProvider>(Singleton);
+            _container.RegisterType<IDiscountProvider, DiscountProvider>(Singleton);
+            _container.RegisterType<IDataProvider, InMemoryDataProvider>(Singleton);
         }
         private void ApplyConfigurationOverrides()
         {

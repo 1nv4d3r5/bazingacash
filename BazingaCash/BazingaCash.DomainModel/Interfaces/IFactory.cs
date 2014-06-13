@@ -1,4 +1,6 @@
-﻿namespace BazingaCash.DomainModel.Interfaces
+﻿using BazingaCash.DomainModel.Enums;
+
+namespace BazingaCash.DomainModel.Interfaces
 {
     public interface IFactory
     {

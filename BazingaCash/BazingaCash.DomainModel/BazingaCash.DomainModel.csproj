@@ -39,9 +39,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BuySomeGetFreeCoupon.cs" />
+    <Compile Include="Discount.cs" />
+    <Compile Include="Enums\ProductType.cs" />
+    <Compile Include="Enums\QuatityType.cs" />
+    <Compile Include="Interfaces\ICashRegister.cs" />
+    <Compile Include="Interfaces\ICoupon.cs" />
+    <Compile Include="Interfaces\ICouponApplicableToMultipleProducts.cs" />
+    <Compile Include="Interfaces\ICouponApplicableToSingleProduct.cs" />
+    <Compile Include="Interfaces\IDataProvider.cs" />
+    <Compile Include="Interfaces\IDiscountProvider.cs" />
+    <Compile Include="Interfaces\IFactory.cs" />
+    <Compile Include="Interfaces\IPaymentProvider.cs" />
+    <Compile Include="PercentOfTotalCoupon.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
